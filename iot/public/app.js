@@ -9,14 +9,14 @@
         },
         function(data, status){
             alert(data + "--" + status);
-        }
-        )
-        $.get("/center",
-        function(data,status){
-            alert(data+"--"+status);
-            document.write(data);
-        }
-        )
+            if(data === 'ok'){
+                $.get("/center",
+                function(data_doc,status){
+                    alert(data_doc+"--"+status);
+                    document.write(data_doc);
+                })
+            }
+        })
     })
     
 })(jQuery);
