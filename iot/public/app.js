@@ -12,7 +12,7 @@
             },
             error: function(data, status){
                 alert("error:\r\ndata:"+data+"\r\n"+"status:"+status);
-                location.href = 'login';
+                location.href = '';  //login the root html
             }
             
         });
