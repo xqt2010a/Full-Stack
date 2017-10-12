@@ -32,12 +32,15 @@ app.use(express.static('public'));
 // 处理根目录的get请求
 app.get('/',function(req,res){
     res.sendfile('public/index.html') ;
+    res.end();
     console.log('main page is required ');
 });
 
 // 处理/login的get请求
 app.get('/center', function (req,res) {
     res.sendfile('public/center.html') ;
+    //res.send('hello');
+    //res.end();
     console.log('有后台请求') ;
 }) ;
 
