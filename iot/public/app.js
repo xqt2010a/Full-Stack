@@ -8,7 +8,7 @@
             data:{name:name, pwd:pwd},
             success: function(data, status){
                 alert("success:\r\ndata:"+data+"\r\n"+"status:"+status);
-                location.href = 'center';
+                location.href = 'web/center.html';
             },
             error: function(data, status){
                 alert("error:\r\ndata:"+data+"\r\n"+"status:"+status);

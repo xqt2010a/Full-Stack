@@ -38,9 +38,7 @@ app.get('/',function(req,res){
 
 // 处理/login的get请求
 app.get('/center', function (req,res) {
-    res.sendfile('public/center.html') ;
-    //res.send('hello');
-    //res.end();
+    res.sendfile('public/web/center.html') ;
     console.log('有后台请求') ;
 }) ;
 
